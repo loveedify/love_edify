@@ -16,22 +16,27 @@ export const metadata: Metadata = {
 };
 
 const paperworkItems = [
-  { name: 'Enrollment Application Form', desc: 'Complete to begin the enrollment process', type: 'PDF' },
-  { name: 'Child Medical History Form', desc: 'Required health history and immunization records', type: 'PDF' },
-  { name: 'Emergency Contact Form', desc: 'List all emergency contacts and authorized pickup persons', type: 'PDF' },
-  { name: 'Medication Authorization Form', desc: 'Permission for administering medication at the center', type: 'PDF' },
-  { name: 'Photo & Media Release', desc: 'Permission for photos and videos of your child', type: 'PDF' },
-  { name: 'Arrival & Departure Authorization', desc: 'Authorized persons to pick up your child', type: 'PDF' },
-  { name: 'Allergy & Special Needs Form', desc: 'Document any dietary restrictions or special requirements', type: 'PDF' },
-  { name: 'Tuition Agreement', desc: 'Payment schedule, policies, and fee agreement', type: 'PDF' },
+  {
+    name: 'Daycare Enrollment Form',
+    desc: 'Register your child and begin the admissions process',
+    type: 'PDF',
+    href: 'https://jvjrzfoduxmfiqihllhd.supabase.co/storage/v1/object/public/documents/_Daycare_Enrollment_Form.pdf?download=',
+  },
+  // { name: 'Child Medical History Form', desc: 'Required health history and immunization records', type: 'PDF', href: '' },
+  // { name: 'Emergency Contact Form', desc: 'List all emergency contacts and authorized pickup persons', type: 'PDF', href: '' },
+  // { name: 'Medication Authorization Form', desc: 'Permission for administering medication at the center', type: 'PDF', href: '' },
+  // { name: 'Photo & Media Release', desc: 'Permission for photos and videos of your child', type: 'PDF', href: '' },
+  // { name: 'Arrival & Departure Authorization', desc: 'Authorized persons to pick up your child', type: 'PDF', href: '' },
+  // { name: 'Allergy & Special Needs Form', desc: 'Document any dietary restrictions or special requirements', type: 'PDF', href: '' },
+  // { name: 'Tuition Agreement', desc: 'Payment schedule, policies, and fee agreement', type: 'PDF', href: '' },
 ];
 
 const resources = [
   {
     icon: BookOpen,
-    title: 'Parent Handbook',
-    desc: 'Comprehensive guide to policies, procedures, schedules, and expectations.',
-    href: '#handbook',
+    title: 'Daycare Enrollment Form',
+    desc: 'Complete the required enrollment information to register your child and begin the admissions process.',
+    href: '#paperwork',
     color: 'text-forest-500',
     bg: 'bg-forest-50',
     id: 'handbook',
@@ -54,15 +59,15 @@ const resources = [
     bg: 'bg-golden-50',
     id: 'app',
   },
-  {
-    icon: Shield,
-    title: 'Health & Safety',
-    desc: 'Illness policies, emergency procedures, and COVID protocols for our center.',
-    href: '#paperwork',
-    color: 'text-sage-500',
-    bg: 'bg-sage-100',
-    id: 'health',
-  },
+  // {
+  //   icon: Shield,
+  //   title: 'Health & Safety',
+  //   desc: 'Illness policies, emergency procedures, and COVID protocols for our center.',
+  //   href: '#paperwork',
+  //   color: 'text-sage-500',
+  //   bg: 'bg-sage-100',
+  //   id: 'health',
+  // },
 ];
 
 async function getEvents(): Promise<CenterEvent[]> {
@@ -115,7 +120,7 @@ export default async function ParentResourcesPage() {
                 Access all parent tools, documents, and communication systems in one place.
               </p>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
               {resources.map((r) => (
                 <a
                   key={r.title}
@@ -178,8 +183,11 @@ export default async function ParentResourcesPage() {
               </div>
               <div className="space-y-3">
                 {paperworkItems.map((item) => (
-                  <div
+                  <a
                     key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center justify-between bg-white rounded-xl px-5 py-4 border border-cream-100 group hover:border-forest-200 transition-colors duration-200"
                   >
                     <div className="flex items-center gap-3">
@@ -195,9 +203,9 @@ export default async function ParentResourcesPage() {
                       <span className="text-xs text-muted-gray font-inter bg-cream-100 px-2 py-0.5 rounded">
                         {item.type}
                       </span>
-                      <Download className="w-4 h-4 text-muted-gray group-hover:text-forest-500 transition-colors cursor-pointer" />
+                      <Download className="w-4 h-4 text-muted-gray group-hover:text-forest-500 transition-colors" />
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </div>
