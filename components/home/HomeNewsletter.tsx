@@ -20,19 +20,39 @@ export default function HomeNewsletter() {
       .from('newsletter_subscribers')
       .insert({ email, name });
 
-    setLoading(false);
-
     if (dbError) {
+      setLoading(false);
       if (dbError.code === '23505') {
         setError('This email is already subscribed!');
       } else {
         setError('Something went wrong. Please try again.');
       }
-    } else {
-      setSuccess(true);
-      setEmail('');
-      setName('');
+      return;
     }
+
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/send-newsletter-email`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
+          },
+          body: JSON.stringify({ email, name }),
+        }
+      );
+      if (!res.ok) {
+        console.error('Email notification failed:', res.status);
+      }
+    } catch (emailErr) {
+      console.error('Email notification error:', emailErr);
+    }
+
+    setLoading(false);
+    setSuccess(true);
+    setEmail('');
+    setName('');
   };
 
   return (
