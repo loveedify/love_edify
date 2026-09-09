@@ -45,13 +45,33 @@ export default function EnrollmentForm() {
       start_date: form.start_date || null,
     });
 
-    setLoading(false);
-
     if (dbError) {
+      setLoading(false);
       setError('Something went wrong. Please try again or call us directly.');
-    } else {
-      setSuccess(true);
+      return;
     }
+
+    try {
+      const res = await fetch(
+        `${process.env.NEXT_PUBLIC_SUPABASE_URL}/functions/v1/send-enrollment-email`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY}`,
+          },
+          body: JSON.stringify(form),
+        }
+      );
+      if (!res.ok) {
+        console.error('Email notification failed:', res.status);
+      }
+    } catch (emailErr) {
+      console.error('Email notification error:', emailErr);
+    }
+
+    setLoading(false);
+    setSuccess(true);
   };
 
   const inputClass =
