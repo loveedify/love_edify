@@ -91,6 +91,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${poppins.variable} ${inter.variable} ${playfair.variable}`}>
       <head>
+        <link rel="icon" type="image/png" href="https://static.wixstatic.com/media/c73eb8_d5f491344d7c42a48cc4bcb39e3ea7a4~mv2.png" />
         <link rel="canonical" href="https://loveedify.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#184D47" />
