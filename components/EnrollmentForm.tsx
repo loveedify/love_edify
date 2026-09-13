@@ -9,8 +9,7 @@ const programs = [
   'Toddler Program (1–2 years)',
   'Preschool (3–4 years)',
   'Pre-Kindergarten (4–5 years)',
-  'School-Age Care (5–12 years)',
-  'Summer Program (5–12 years)',
+ 
 ];
 
 export default function EnrollmentForm() {
