@@ -174,7 +174,7 @@ export default function HomePrograms() {
               key={program.title}
               className="bg-white rounded-3xl overflow-hidden border border-cream-100 shadow-soft card-hover group"
             >
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img
                   src={program.image}
                   alt={`${program.title} program at Love Edify Child Care`}
