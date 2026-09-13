@@ -74,7 +74,7 @@ const programs = [
     color: 'bg-golden-50',
     iconColor: 'bg-golden-500 text-white',
     image:
-      'https://images.unsplash.com/photo-1544126592-807ade215a0b?w=600&q=80&fit=crop',
+      'https://static.wixstatic.com/media/c73eb8_5ca452edc08e4e4f9255e2b03ce10cea~mv2.jpg',
   },
   {
     icon: Star,
@@ -85,7 +85,7 @@ const programs = [
     color: 'bg-sage-100',
     iconColor: 'bg-sage-400 text-white',
     image:
-      'https://images.unsplash.com/photo-1609834008399-c00e10728e7b?q=80&w=1170&auto=format&fit=crop',
+      'https://static.wixstatic.com/media/c73eb8_1d1a18a1437f4194882b5bea3a680e3f~mv2.jpg',
   },
   {
     icon: Heart,
@@ -96,7 +96,7 @@ const programs = [
     color: 'bg-forest-50',
     iconColor: 'bg-forest-500 text-white',
     image:
-      'https://images.unsplash.com/photo-1516627145497-ae6968895b74?q=80&w=1170&auto=format&fit=crop',
+      'https://static.wixstatic.com/media/c73eb8_b0b7ed375b9d423f92b8cd16ddf9a47f~mv2.jpg',
   },
   {
     icon: BookOpen,
@@ -107,7 +107,7 @@ const programs = [
     color: 'bg-golden-50',
     iconColor: 'bg-golden-500 text-white',
     image:
-      'https://images.unsplash.com/photo-1553641118-066cde5e7047?q=80&w=1170&auto=format&fit=crop',
+      'https://static.wixstatic.com/media/c73eb8_77d24bf886b54a358661d682fb600642~mv2.jpg',
   },
   {
     icon: GraduationCap,
@@ -118,7 +118,7 @@ const programs = [
     color: 'bg-sage-100',
     iconColor: 'bg-sage-400 text-white',
     image:
-      'https://images.unsplash.com/photo-1559918095-0e91f93a8dd8?q=80&w=1170&auto=format&fit=crop',
+      'https://static.wixstatic.com/media/c73eb8_29535b66548947d59a4d77bf7e197cb7~mv2.jpg',
   },
   // {
   //   icon: Sun,
