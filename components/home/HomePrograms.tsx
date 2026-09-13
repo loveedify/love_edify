@@ -120,28 +120,28 @@ const programs = [
     image:
       'https://images.unsplash.com/photo-1559918095-0e91f93a8dd8?q=80&w=1170&auto=format&fit=crop',
   },
-  {
-    icon: Sun,
-    title: 'School-Age Care',
-    age: '5 – 6 years',
-    description:
-      'Supportive before and after school care featuring homework help, enrichment activities, structured recreation, and spiritual encouragement.',
-    color: 'bg-forest-50',
-    iconColor: 'bg-forest-500 text-white',
-    image:
-      'https://images.unsplash.com/photo-1473280025148-643f9b0cbac2?q=80&w=1176&auto=format&fit=crop',
-  },
-  {
-    icon: Moon,
-    title: 'Extended School-Age Program',
-    age: '6 – 13 years',
-    description:
-      'A safe and engaging environment for older children with mentorship, group activities, leadership opportunities, and seasonal programs.',
-    color: 'bg-golden-50',
-    iconColor: 'bg-golden-500 text-white',
-    image:
-      'https://images.unsplash.com/photo-1606978806539-28ad82207267?q=80&w=1170&auto=format&fit=crop',
-  },
+  // {
+  //   icon: Sun,
+  //   title: 'School-Age Care',
+  //   age: '5 – 6 years',
+  //   description:
+  //     'Supportive before and after school care featuring homework help, enrichment activities, structured recreation, and spiritual encouragement.',
+  //   color: 'bg-forest-50',
+  //   iconColor: 'bg-forest-500 text-white',
+  //   image:
+  //     'https://images.unsplash.com/photo-1473280025148-643f9b0cbac2?q=80&w=1176&auto=format&fit=crop',
+  // },
+  // {
+  //   icon: Moon,
+  //   title: 'Extended School-Age Program',
+  //   age: '6 – 13 years',
+  //   description:
+  //     'A safe and engaging environment for older children with mentorship, group activities, leadership opportunities, and seasonal programs.',
+  //   color: 'bg-golden-50',
+  //   iconColor: 'bg-golden-500 text-white',
+  //   image:
+  //     'https://images.unsplash.com/photo-1606978806539-28ad82207267?q=80&w=1170&auto=format&fit=crop',
+  // }, 
 ];
 
 
