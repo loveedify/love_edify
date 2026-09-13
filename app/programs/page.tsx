@@ -157,7 +157,7 @@ export default function ProgramsPage() {
                     <img
                       src={program.image}
                       alt={`${program.title} at Love Edify Child Care`}
-                      className="w-full h-[380px] object-cover"
+                      className="w-full h-full object-cover"
                     />
                     <div className="absolute top-4 left-4">
                       <div className={`${program.color} text-white font-inter text-xs font-medium px-3 py-1.5 rounded-full flex items-center gap-1.5`}>
