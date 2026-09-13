@@ -117,48 +117,7 @@ const programs = [
       'https://images.unsplash.com/photo-1559918095-0e91f93a8dd8?q=80&w=1170&auto=format&fit=crop',
     color: 'bg-sage-400',
   },
-  {
-    id: 'school-age',
-    icon: Sun,
-    title: 'School-Age Care',
-    age: '5 – 6 years',
-    hours: 'Full-day',
-    ratio: '1:15 teacher-to-child',
-    description:
-      'Our school-age care program offers a safe and enriching environment where children receive homework support, mentorship, and engaging activities before and after school.',
-    features: [
-      'Homework help and academic encouragement',
-      'Enrichment activities in art, STEM, and recreation',
-      'Character-building and mentorship opportunities',
-      'Social interaction and outdoor play',
-      'Healthy snacks and wellness education',
-      'Morning devotionals and positive routines',
-    ],
-    image:
-      'https://images.unsplash.com/photo-1473280025148-643f9b0cbac2?q=80&w=1176&auto=format&fit=crop',
-    color: 'bg-forest-500',
-  },
-  {
-    id: 'extended-school-age',
-    icon: Moon,
-    title: 'Extended School-Age Program',
-    age: '6 – 13 years',
-    hours: 'Full-day',
-    ratio: '1:20 counselor-to-child',
-    description:
-      'Designed for older children, our extended school-age program provides leadership opportunities, enrichment experiences, mentorship, and exciting seasonal activities.',
-    features: [
-      'Leadership and team-building activities',
-      'Homework assistance and independent study time',
-      'Sports, recreation, and creative enrichment',
-      'Field trips and seasonal themed programs',
-      'Faith devotionals and character challenges',
-      'Community service and collaborative projects',
-    ],
-    image:
-      'https://images.unsplash.com/photo-1606978806539-28ad82207267?q=80&w=1170&auto=format&fit=crop',
-    color: 'bg-golden-500',
-  },
+  
 ];
 
 
