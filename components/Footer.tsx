@@ -97,8 +97,7 @@ export default function Footer() {
     { href: '/programs#older-toddlers', label: 'Older Toddlers (2–3 years)' },
     { href: '/programs#preschool', label: 'Preschool (3–4 years)' },
     { href: '/programs#prek', label: 'Pre-Kindergarten (4–5 years)' },
-    { href: '/programs#school-age', label: 'School-Age Care (5–6 years)' },
-    { href: '/programs#extended-school-age', label: 'Extended School-Age Program (6–13 years)' },
+    
   ].map((program) => (
     <li key={program.label}>
       <Link
