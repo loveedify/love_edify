@@ -122,7 +122,7 @@ const programs = [
     icon: Sun,
     title: 'School-Age Care',
     age: '5 – 6 years',
-    hours: 'Before & After School',
+    hours: 'Full-day',
     ratio: '1:15 teacher-to-child',
     description:
       'Our school-age care program offers a safe and enriching environment where children receive homework support, mentorship, and engaging activities before and after school.',
@@ -143,7 +143,7 @@ const programs = [
     icon: Moon,
     title: 'Extended School-Age Program',
     age: '6 – 13 years',
-    hours: 'Before & After School + Summer',
+    hours: 'Full-day',
     ratio: '1:20 counselor-to-child',
     description:
       'Designed for older children, our extended school-age program provides leadership opportunities, enrichment experiences, mentorship, and exciting seasonal activities.',
