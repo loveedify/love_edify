@@ -1,5 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
+import Script from 'next/script';
 import { Poppins, Inter, Playfair_Display } from 'next/font/google';
 
 const poppins = Poppins({
@@ -96,7 +97,18 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#184D47" />
       </head>
-      <body className="font-inter bg-cream text-charcoal antialiased">{children}</body>
+      <body className="font-inter bg-cream text-charcoal antialiased">
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-SMMD0WNX6Z" strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-SMMD0WNX6Z');
+          `}
+        </Script>
+        {children}
+      </body>
     </html>
   );
 }
