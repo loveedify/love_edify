@@ -96,7 +96,7 @@ const programs = [
     color: 'bg-forest-50',
     iconColor: 'bg-forest-500 text-white',
     image:
-      'https://static.wixstatic.com/media/c73eb8_b0b7ed375b9d423f92b8cd16ddf9a47f~mv2.jpg',
+      'https://static.wixstatic.com/media/c73eb8_202fc24f71ad4ed79aa52a7486bd36fe~mv2.jpg',
   },
   {
     icon: BookOpen,
@@ -107,7 +107,7 @@ const programs = [
     color: 'bg-golden-50',
     iconColor: 'bg-golden-500 text-white',
     image:
-      'https://static.wixstatic.com/media/c73eb8_77d24bf886b54a358661d682fb600642~mv2.jpg',
+      'https://static.wixstatic.com/media/c73eb8_77e9c60856234b84a8a010b00a5909a9~mv2.jpg',
   },
   {
     icon: GraduationCap,
